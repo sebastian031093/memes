@@ -1,0 +1,38 @@
+**) git --version = nos permite ver la vercion en la cual estamos trabajando.
+**) git help
+NOTA: q SE USA PARA SALIR QUIT.
+**) git config --global user.name "Sebastian Manco Gomez"
+**) git config --global -e // nos permite ver las config mas recientes : para modificar (A), para guardar cambio y salir('esc' :wq!) or (:q!)
+
+//cambiar el nombre por defecto de la rama en la que estamos trabajando
+**) git config --global init.defaultBranch <name>
+// ver el estatus del proyectop
+**) git status
+// traker a archivos
+**) git add <name + extencion> or (.) all files
+// remueve files
+**) git reset <name + extencion> or (.) all files
+// commit (scree shot de codigo)
+**) git commit -m <nombre del commit>
+// historial de coomits
+**) git log
+// RECONSTRUIMOS EL PROYECTO A COMO ESTABA EN EL ULTIMO COMMIT
+**) git checkout -- .
+// Donde estoy trabajando
+**) git branch
+// combo para agregar commit y add al mismo tiempo
+**) git commit -am <name>
+
+//OJO
+.gitkeep == mantiene folder que al estar vacio son importantes para el proyecto por los trakers que pueden contener
+
+//(Wildcards) 
+https://css-tricks.com/git-pathspecs-and-how-to-use-them/#:~:text=The%20*%20symbol%20is%20used%20as,it%20will%20search%20through%20subdirectories.&text=The%20quotes%20are%20important%2C%20especially,the%20wildcards%20on%20their%20own.
+//traker a multiples archivos de una misma extencion
+**) git add *.<extencion>
+**) git add <folder>/ = agreaga el directorio y todos los sub directortios que hay en ese folder
+
+
+//creando alias para nuestros comandos
+**) git config --global alias.<nombre del alias> "status --short(comando que quieres poner en el alias)"
+ 	
